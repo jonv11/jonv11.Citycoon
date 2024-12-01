@@ -28,12 +28,9 @@
 		/// <param name="length">The length of the lane edge.</param>
 		public LaneEdge(LaneVertex input, LaneVertex output, float length)
 		{
-			if (input == null)
-				throw new ArgumentNullException(nameof(input));
-			if (output == null)
-				throw new ArgumentNullException(nameof(output));
-			if (length <= 0)
-				throw new ArgumentOutOfRangeException(nameof(length));
+			ArgumentNullException.ThrowIfNull(input);
+			ArgumentNullException.ThrowIfNull(output);
+			ArgumentOutOfRangeException.ThrowIfNegativeOrZero(length);
 			Input = input;
 			Output = output;
 			Length = length;
