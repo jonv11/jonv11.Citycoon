@@ -4,8 +4,31 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  build-ubuntu-latest:
+    name: Build and Test Ubuntu
     runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build solution
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Run tests
+      run: dotnet test --no-build --configuration Release
+
+  build-windows-latest:
+    name: Build and Test Windows
+    runs-on: windows-latest
 
     steps:
     - name: Checkout repository
