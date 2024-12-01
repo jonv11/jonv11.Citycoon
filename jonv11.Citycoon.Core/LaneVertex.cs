@@ -59,8 +59,7 @@
 		/// <exception cref="InvalidOperationException">Thrown when the edge's output is not this vertex.</exception>
 		public bool AddInput(LaneEdge edge)
 		{
-			if (edge == null)
-				throw new ArgumentNullException(nameof(edge));
+			ArgumentNullException.ThrowIfNull(edge);
 			if (edge.Output != this)
 				throw new InvalidOperationException("Invalid edge.Output value");
 			return inputs.Add(edge);
@@ -85,8 +84,7 @@
 		/// <exception cref="InvalidOperationException">Thrown when the edge's input is not this vertex.</exception>
 		public bool AddOutput(LaneEdge edge)
 		{
-			if (edge == null)
-				throw new ArgumentNullException(nameof(edge));
+			ArgumentNullException.ThrowIfNull(edge);
 			if (edge.Input != this)
 				throw new InvalidOperationException("Invalid edge.Input value");
 			return outputs.Add(edge);

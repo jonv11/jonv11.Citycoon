@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jonv11.Citycoon.Core", "jonv11.Citycoon.Core\jonv11.Citycoon.Core.csproj", "{196FA541-4926-41AA-B3C7-D32E11462B2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jonv11.Citycoon.Core.Tests", "jonv11.Citycoon.Core.Tests\jonv11.Citycoon.Core.Tests.csproj", "{CEFEBF5B-7DC9-4414-9413-A41B3F2C4C31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{196FA541-4926-41AA-B3C7-D32E11462B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{196FA541-4926-41AA-B3C7-D32E11462B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{196FA541-4926-41AA-B3C7-D32E11462B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEFEBF5B-7DC9-4414-9413-A41B3F2C4C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEFEBF5B-7DC9-4414-9413-A41B3F2C4C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEFEBF5B-7DC9-4414-9413-A41B3F2C4C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEFEBF5B-7DC9-4414-9413-A41B3F2C4C31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
